@@ -9,6 +9,7 @@ alias pgdown='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias pgup='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 
 # Convenience aliases
+alias ls="ls -G"
 alias la="ls -aG"
 alias ll="ls -lG"
 alias killpyc="find . -name '*.pyc' -delete"
