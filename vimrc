@@ -1,6 +1,15 @@
 " Enable syntax highlighting
 syntax on
 
+" Use solarized dark colorscheme in terminal
+" solarized light colorscheme in gui
+if has('gui-running')
+    set background=light
+else
+    set background=dark
+endif
+colorscheme solarized
+
 " Use 4 spaces for tabs
 set expandtab
 set tabstop=4
