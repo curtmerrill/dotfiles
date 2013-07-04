@@ -14,3 +14,13 @@ alias la="ls -aG"
 alias ll="ls -lG"
 alias killpyc="find . -name '*.pyc' -delete"
 
+# Utilities
+draw_bar() {
+    export BARSTRING=""
+    for (( i = 0; i < $COLUMNS; i++ ))
+    do
+        export BARSTRING="$BARSTRING="
+    done
+    echo $BARSTRING
+}
+alias bar="draw_bar"
