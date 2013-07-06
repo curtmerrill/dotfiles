@@ -24,3 +24,6 @@ draw_bar() {
     echo $BARSTRING
 }
 alias bar="draw_bar"
+
+# Custom prompt
+. ~/.bash_prompt.sh
