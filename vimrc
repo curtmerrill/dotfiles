@@ -1,3 +1,7 @@
+" Pathogen plugin
+call pathogen#incubate()
+call pathogen#helptags()
+
 " Enable syntax highlighting
 syntax on
 
@@ -22,9 +26,11 @@ set nolist
 set textwidth=0
 set wrapmargin=0
 set formatoptions+=1
+set colorcolumn=85      " colorize column 85
 
 " Show line numbers
 set nu
+set relativenumber
 
 " Disable arrow keys
 map <up> <nop>
@@ -35,4 +41,10 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+
+" Ignore case for lowercase searches,
+" Case senstive for uppercase searches
+set ignorecase
+set smartcase
+
 
