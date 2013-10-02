@@ -5,8 +5,12 @@ call pathogen#helptags()
 " Enable syntax highlighting
 syntax on
 
+" Always show status line
+set laststatus=2
+
 " Use solarized dark colorscheme in terminal
 " solarized light colorscheme in gui
+set t_Co=256
 if has('gui-running')
     set background=light
 else
