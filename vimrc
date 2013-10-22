@@ -5,6 +5,9 @@ call pathogen#helptags()
 " Enable syntax highlighting
 syntax on
 
+" Use UTF-8 by default
+set encoding=utf-8
+
 " Always show status line
 set laststatus=2
 
@@ -51,4 +54,5 @@ imap <right> <nop>
 set ignorecase
 set smartcase
 
-
+" Airline settings
+let g:airline#extensions#tabline#enabled=1  " use airline tabs
