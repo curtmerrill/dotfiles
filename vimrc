@@ -54,5 +54,8 @@ imap <right> <nop>
 set ignorecase
 set smartcase
 
+" Set font in MacVim
+set guifont=Anonymous\ Pro:h14
+
 " Airline settings
 let g:airline#extensions#tabline#enabled=1  " use airline tabs
