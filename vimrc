@@ -55,7 +55,7 @@ set ignorecase
 set smartcase
 
 " Set font in MacVim
-set guifont=Anonymous\ Pro:h14
+set guifont=Source\ Code\ Pro:h13
 
 " Airline settings
 let g:airline#extensions#tabline#enabled=1  " use airline tabs
