@@ -1,7 +1,3 @@
-" Pathogen plugin
-call pathogen#incubate()
-call pathogen#helptags()
-
 " Enable syntax highlighting
 syntax on
 
@@ -57,5 +53,3 @@ set smartcase
 " Set font in MacVim
 set guifont=Source\ Code\ Pro:h13
 
-" Airline settings
-let g:airline#extensions#tabline#enabled=1  " use airline tabs
