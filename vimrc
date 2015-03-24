@@ -22,6 +22,9 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
+" auto indent (new line starts at same indentation as current line)
+set autoindent
+
 " Softwrap lines
 set wrap
 set linebreak
