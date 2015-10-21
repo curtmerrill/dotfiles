@@ -7,9 +7,10 @@ set encoding=utf-8
 " Always show status line
 set laststatus=2
 
+set t_Co=256
+
 " Use solarized dark colorscheme in terminal
 " solarized light colorscheme in gui
-set t_Co=256
 "colorscheme solarized
 "if has('gui-running')
 "    set background=light
@@ -21,6 +22,9 @@ set t_Co=256
 set expandtab
 set tabstop=4
 set shiftwidth=4
+
+" auto indent (new line starts at same indentation as current line)
+set autoindent
 
 " Softwrap lines
 set wrap
