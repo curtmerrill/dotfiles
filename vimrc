@@ -1,7 +1,3 @@
-" Pathogen plugin
-call pathogen#incubate()
-call pathogen#helptags()
-
 " Enable syntax highlighting
 syntax on
 
@@ -14,12 +10,12 @@ set laststatus=2
 " Use solarized dark colorscheme in terminal
 " solarized light colorscheme in gui
 set t_Co=256
-colorscheme solarized
-if has('gui-running')
-    set background=light
-else
-    set background=dark
-endif
+"colorscheme solarized
+"if has('gui-running')
+"    set background=light
+"else
+"    set background=dark
+"endif
 
 " Use 4 spaces for tabs
 set expandtab
@@ -53,9 +49,3 @@ imap <right> <nop>
 " Case senstive for uppercase searches
 set ignorecase
 set smartcase
-
-" Set font in MacVim
-set guifont=Anonymous\ Pro:h14
-
-" Airline settings
-let g:airline#extensions#tabline#enabled=1  " use airline tabs
