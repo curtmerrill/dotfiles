@@ -1,6 +1,10 @@
 # Homebrew path
 export PATH=/usr/local/bin:$PATH
 
+# VirtualEnvWrapper
+export WORKON_HOME=~/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
 # Postgres shortcuts
 alias pgdown='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias pgup='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
