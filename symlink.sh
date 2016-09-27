@@ -11,3 +11,4 @@ ln -s "$PWD/bash_prompt.sh" ~/.bash_prompt.sh
 ln -s "$PWD/vimrc" ~/.vimrc
 ln -s "$PWD/vim" ~/.vim
 ln -s "$PWD/psqlrc" ~/.psqlrc
+ln -s "$PWD/tmux.conf" ~/.tmux.conf
