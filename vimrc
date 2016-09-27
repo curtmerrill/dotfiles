@@ -9,15 +9,6 @@ set laststatus=2
 
 set t_Co=256
 
-" Use solarized dark colorscheme in terminal
-" solarized light colorscheme in gui
-"colorscheme solarized
-"if has('gui-running')
-"    set background=light
-"else
-"    set background=dark
-"endif
-
 " Use 4 spaces for tabs
 set expandtab
 set tabstop=4
