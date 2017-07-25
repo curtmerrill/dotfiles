@@ -16,3 +16,6 @@ alias killpyc="find . -name '*.pyc' -delete"
 
 # Custom prompt
 . ~/.bash_prompt.sh
+
+# Device specific settings
+source ~/.bash_local
