@@ -12,6 +12,7 @@ ln -s "$PWD/vimrc" ~/.vimrc
 ln -s "$PWD/vim" ~/.vim
 ln -s "$PWD/psqlrc" ~/.psqlrc
 ln -s "$PWD/tmux.conf" ~/.tmux.conf
+ln -s "$PWD/editorconfig" ~/.editorconfig
 
 # Get submodules (e.g. vim plugins)
 git submodule update --init
