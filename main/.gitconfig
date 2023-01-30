@@ -1,0 +1,15 @@
+[init]
+	defaultBranch = main
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+	filemode = false
+[core]
+	excludesfile = ~/.gitignore
+	editor = vim
+[pull]
+    rebase = false
+[include]
+	path = ~/.gitconfig.local

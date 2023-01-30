@@ -1,0 +1,8 @@
+.DS_Store
+._*
+.py[co]
+__pycache__
+.env
+env
+node_modules
+*.swp

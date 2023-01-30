@@ -1,0 +1,5 @@
+\set COMP_KEYWORD_CASE upper
+\x auto
+\pset null '(null)'
+\set PROMPT1 '%M %[%033[1;32m%]%/%[%033[0m%]%R%#%x '
+\set PROMPT2 '%M %[%033[1;36m%]%/%[%033[0m%]%R%#%x '
