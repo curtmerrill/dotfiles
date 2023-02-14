@@ -27,6 +27,7 @@ contains settings specific to my home computer.
 Requirements:
   * Zsh (macOS default; apt-get install zsh, chsh)
   * Stow (brew install stow; apt-get install stow)
+  * direnv (brew install direnv; apt-get install direnv)
   * [Powerlevel10k](https://github.com/romkatv/powerlevel10k#manual)
   
 Set up: 

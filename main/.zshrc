@@ -19,6 +19,7 @@ export NVM_DIR="$HOME/.nvm"
 
 alias gfp="git fetch && git pull"
 
+eval "$(direnv hook zsh)"
 
 # Load local-specific .zshrc if available
 if [ -f ~/.zshrc.local ]; then
