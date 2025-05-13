@@ -1,0 +1,21 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
+- link:
+    ~/.base16_theme: config/base16-shell/scripts/base16-solarized-light.sh
+    ~/.editorconfig: editorconfig
+    ~/.gitconfig: gitconfig
+    ~/.gitignore: gitignore
+    ~/.psqlrc: psqlrc
+    ~/.ssh/authorized_keys: ssh/authorized_keys
+    ~/.tmux.conf: tmux.conf
+    ~/.zprofile: zprofile
+    ~/.zshrc: zshrc
+    ~/.vimrc: vimrc
+

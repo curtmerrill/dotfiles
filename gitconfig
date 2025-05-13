@@ -1,0 +1,36 @@
+[init]
+    defaultBranch = main
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
+[column]
+    ui = auto
+[commit]
+    verbose = true
+[core]
+    excludesfile = ~/.gitignore
+    editor = vim
+    filemode = false
+[diff]
+    algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix =true
+    renames = true
+[fetch]
+    prune = true
+    pruneTags = true
+    all = true
+[help]
+    autocorrect = prompt
+[pull]
+    rebase = false
+[push]
+    default = simple
+    followTags = true
+    autoSetupRemote = true
+[tag]
+    sort = version:refname
+[include]
+    path = ~/.gitconfig.local
