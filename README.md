@@ -9,3 +9,14 @@ TODO:
   - actually write a readme
   - do some testing
 
+## Notes
+
+- shell `*profile` good for system-wide environment vars, init scripts
+- shell `*rc` good for prompt customization, functions, path exports, aliases
+
+
+`.zprofile` run once on login
+`.zshrc` run each time a shell is started
+
+`.bash_profile` loaded once on login
+`.bashrc` loaded each time a shell is started
