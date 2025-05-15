@@ -1,20 +1,24 @@
-uses dotbot, base-16 as submodules
-assumes direnv and [starship](https://starship.rs/guide/#🚀-installation) are installed
-  - brew install direnv starship
+# dotfiles
 
-TODO:
-  - add bashrc, bashprofile for servers
-  - actually write a readme
-  - do some testing
+## Usage
+
+1. Clone repo
+2. cd into repo directory
+3. run `install`
+
 
 ## Notes
+- uses dotbot, base-16 as submodules
+- assumes direnv and [starship](https://starship.rs/guide/#🚀-installation) are installed
+  - brew install direnv starship
 
-- shell `*profile` good for system-wide environment vars, init scripts
-- shell `*rc` good for prompt customization, functions, path exports, aliases
+- shell `*profile` run once per login; good for system-wide environment vars, init scripts
+- shell `*rc` run each time shell is started; good for prompt customization, functions, path exports, aliases
 
 
-`.zprofile` run once on login
-`.zshrc` run each time a shell is started
-
-`.bash_profile` loaded once on login
-`.bashrc` loaded each time a shell is started
+Create `~/.gitconfig.local` to set user info:
+```
+[user]
+    name = Curt Merrill
+    email = curt@curtmerrill.com
+```
