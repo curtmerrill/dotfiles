@@ -11,6 +11,7 @@ base16_solarized-light
 alias ls="ls -GF"
 alias ll="ls -l"
 alias la="ll -a"
+alias beep="echo -e \"\a\""
 
 alias gfp="git fetch && git pull"
 
