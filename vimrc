@@ -9,7 +9,6 @@ set encoding=utf-8
 set laststatus=2
 
 set t_Co=256
-colorscheme base16-solarized-light
 
 " Use 4 spaces for tabs
 set expandtab

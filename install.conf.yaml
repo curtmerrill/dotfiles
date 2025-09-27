@@ -11,6 +11,7 @@
     ~/.base16_theme: config/base16-shell/scripts/base16-solarized-light.sh
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
+    ~/.config/bat/config: config/bat/config
     ~/.editorconfig: editorconfig
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
