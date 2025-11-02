@@ -1,8 +1,16 @@
 # .zprofile
 # - for environment variables, configuration
+
+# default programs
+export EDITOR="nvim"
+
+# follow XDG base dir specs
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
+
 # Set PATH, MANPATH, etc., for macOS machines
 eval "$(/opt/homebrew/bin/brew shellenv)"
-
 
 # add local specific profile settings, if needed
 if [ -f ~/.zprofile.local ]; then

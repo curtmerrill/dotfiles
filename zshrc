@@ -1,5 +1,31 @@
 # .zshrc - For *interactive* uses -- e.g. aliases, prompts, etc.
 
+# auto complete and color modules
+zmodload zsh/complist
+autoload -U compinit && compinit
+autoload -U colors && colors
+
+# auto completion options
+zstyle ':completion:*' menu select          # tab opens cmp menu
+zstyle ':completion:*' special-dirs true    # force . and .. to show in cmp menu
+zstyle ':completion:*' list-colors # ${(s.:.)LS_COLORS} ma=0\;33 # colorize cmp menu
+zstyle ':completion:*' squeeze-slashes false # explicit disable to allow /*/ expansion
+
+setopt append_history inc_append_history share_history # better history
+setopt auto_param_slash # when a dir is completed, add a / instead of a trailing space
+setopt no_case_glob no_case_match # make cmp case insensitive
+setopt globdots # include dotfiles
+setopt extended_glob # match ~ # ^
+setopt interactive_comments # allow comments in shell
+unsetopt prompt_sp # don't autoclean blanklines
+
+# history options
+HISTSIZE=1000000
+SAVEHIST=1000000
+HISTFILE="$XDG_CACHE_HOME/zsh_history" # move histfile to cache
+HISTCONTROL=ignoreboth # consecutive duplicates & commands starting with space are not saved
+
+
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
