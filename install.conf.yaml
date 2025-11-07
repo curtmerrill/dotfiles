@@ -11,6 +11,7 @@
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
     ~/.config/bat/config: config/bat/config
+    ~/.config/nvim/init.lua: config/nvim/init.lua
     ~/.editorconfig: editorconfig
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
