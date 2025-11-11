@@ -34,6 +34,7 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 
 base16_solarized-light
 
+# TODO: move aliases to their own file to source
 alias ls="ls -GF"
 alias ll="ls -l"
 alias la="ll -a"

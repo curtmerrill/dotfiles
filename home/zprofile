@@ -10,6 +10,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 
 # Set PATH, MANPATH, etc., for macOS machines
+# TODO: check for MacOS before running this
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # add local specific profile settings, if needed
