@@ -1,5 +1,12 @@
+-- uppercase keywords when using tab completion
 \set COMP_KEYWORD_CASE upper
+
+-- Use expanded display mode for wide outputs
 \x auto
+
+-- Display for NULL values
 \pset null '(null)'
+
+-- Set prompts
 \set PROMPT1 '%M %[%033[1;32m%]%/%[%033[0m%]%R%#%x '
 \set PROMPT2 '%M %[%033[1;36m%]%/%[%033[0m%]%R%#%x '

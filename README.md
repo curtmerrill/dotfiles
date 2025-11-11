@@ -2,28 +2,24 @@
 
 ## Usage
 
-1. Clone repo
-2. cd into repo directory
-3. run `install`
+1. Clone repo to `~/dotfiles`
+  _(ToDo: un-hardcode that from install script)_
+2. cd into `dotfiles` directory
+3. run `install.sh`
 
+**Prereqs**
+  - [direnv](https://direnv.net/docs/installation.html)
+  - [starship](https://starship.rs/guide/#🚀-installation)
 
 ## Notes
-- uses dotbot, base-16 as submodules
-- assumes direnv and [starship](https://starship.rs/guide/#🚀-installation) are installed
-  - `brew install direnv starship`
-- assumes bat is installed
-  - `brew install bat`
+Includes base-16 as a submodule.
 
+Shell `*profile` files run once per login; good for system-wide environment vars, init scripts.
 
+`*rc` files run each time shell is started; good for prompt customization, functions, path exports, aliases.
 
-
-- shell `*profile` run once per login; good for system-wide environment vars, init scripts
-- shell `*rc` run each time shell is started; good for prompt customization, functions, path exports, aliases
-
-
-Create `~/.gitconfig.local` to set user info:
-```
-[user]
-    name = Curt Merrill
-    email = curt@curtmerrill.com
-```
+The following files will load `*.local` versions for sensitive or
+machine specific info:
+  - `.zprofile` and `.zshrc`
+  - `.bash_profile` and `.bashrc`
+  - `.gitconfig`
