@@ -9,6 +9,8 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 
+export STARSHIP_CONFIG="~/.config/starship/starship.toml"
+
 # Set PATH, MANPATH, etc., for macOS machines
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
