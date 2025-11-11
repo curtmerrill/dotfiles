@@ -41,10 +41,10 @@ alias beep="echo -e \"\a\""
 
 alias gfp="git fetch && git pull"
 
+eval "$(starship init zsh)"
 eval "$(direnv hook zsh)"
 . "$HOME/.cargo/env"
 
-eval "$(starship init zsh)"
 
 # Load local-specific .zshrc if available
 if [ -f ~/.zshrc.local ]; then

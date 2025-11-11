@@ -9,6 +9,10 @@ export XDG_CACHE_HOME="$HOME/.cache"
 # Specify location for Starship config
 export STARSHIP_CONFIG="~/.config/starship/starship.toml"
 
+# add bashrc, if available
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi
 
 # add local specific profile settings, if needed
 if [ -f ~/.bash_profile.local ]; then

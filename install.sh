@@ -31,7 +31,7 @@ link_file() {
     fi
 
     # Create new symlink
-    echo "Creating symlink "
+    echo "Creating symlink $dest"
     ln -sf "$src" "$dest"
 }
 
@@ -45,13 +45,22 @@ for file in "$DOTFILES_HOME_DIR"/*; do
 done
 
 
-# Link .config directory files
-echo "Linking .config directory files..."
+# Link .config directory directories
+echo "Linking .config directory directories..."
 mkdir -p "$CONFIG_DIR"
 for dir in "$DOTFILES_CONFIG_DIR"/*; do
     [ -d "$dir" ] || continue
     dirname=$(basename "$dir")
     link_file "$dir" "$CONFIG_DIR/$dirname"
+done
+
+# link home directory dotfiles
+echo "Linking config directory files..."
+for file in "$DOTFILES_CONFIG_DIR"/*; do
+    [ -f "$file" ] || continue
+    # Add dot to start of file name
+    filename="$(basename "$file")"
+    link_file "$file" "$CONFIG_DIR/$filename"
 done
 
 
