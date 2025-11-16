@@ -23,3 +23,8 @@ machine specific info:
   - `.zprofile` and `.zshrc`
   - `.bash_profile` and `.bashrc`
   - `.gitconfig`
+
+
+## Inspiration
+[Bread on Penguins](https://www.youtube.com/@BreadOnPenguins)  
+[Nicolay Christopher Gerold](https://www.nicolaygerold.com/til/how-to-set-up-your-dotfiles-for-sharing/)  
