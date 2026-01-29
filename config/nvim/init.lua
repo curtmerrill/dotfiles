@@ -28,7 +28,6 @@ vim.opt.hlsearch = true
 vim.opt.incsearch = true
 
 -- visual settings
-vim.opt.termguicolors = false
 vim.opt.signcolumn = "yes"
 vim.opt.colorcolumn = "92"
 vim.opt.showmatch = true

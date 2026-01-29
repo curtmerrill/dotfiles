@@ -12,8 +12,6 @@
   - [starship](https://starship.rs/guide/#🚀-installation)
 
 ## Notes
-Includes base-16 as a submodule.
-
 Shell `*profile` files run once per login; good for system-wide environment vars, init scripts.
 
 `*rc` files run each time shell is started; good for prompt customization, functions, path exports, aliases.
