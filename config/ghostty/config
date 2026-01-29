@@ -3,6 +3,6 @@ font-size = 15
 cursor-style = block
 working-directory = home
 window-inherit-working-directory = false
-theme = Builtin Solarized Light
 background-opacity = 1
 background-blur-radius = 20
+theme = Flexoki Light
