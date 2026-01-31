@@ -1,4 +1,4 @@
-alias ls="ls -GF"
+alias ls="ls -F"
 alias ll="ls -l"
 alias la="ll -a"
 alias beep="echo -e \"\a\""
