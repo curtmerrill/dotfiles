@@ -28,7 +28,7 @@ HISTCONTROL=ignoreboth # consecutive duplicates & commands starting with space a
 
 
 # TODO: move aliases to their own file to source
-alias ls="ls -GF"
+alias ls="ls -F"
 alias ll="ls -l"
 alias la="ll -a"
 alias beep="echo -e \"\a\""
