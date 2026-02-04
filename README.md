@@ -26,3 +26,9 @@ machine specific info:
 ## Inspiration
 [Bread on Penguins](https://www.youtube.com/@BreadOnPenguins)  
 [Nicolay Christopher Gerold](https://www.nicolaygerold.com/til/how-to-set-up-your-dotfiles-for-sharing/)  
+
+Colorscheme: [Flexoki](https://github.com/kepano/flexoki),
+Neovim implementation by [cpplain](https://github.com/cpplain/dotfiles/blob/main/home/.config/nvim/init.lua)
+
+
+
