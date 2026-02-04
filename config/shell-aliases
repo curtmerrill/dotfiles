@@ -1,0 +1,10 @@
+alias ls="ls -F"
+alias ll="ls -l"
+alias la="ll -a"
+alias beep="echo -e \"\a\""
+
+alias gfp="git fetch && git pull"
+
+if command -v nvim >/dev/null 2>&1; then
+    alias vim="nvim"
+fi

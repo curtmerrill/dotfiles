@@ -25,19 +25,11 @@ SAVEHIST=$HISTSIZE
 HISTFILE="$XDG_CACHE_HOME/zsh_history" # move histfile to cache
 HISTCONTROL=ignoreboth # consecutive duplicates & commands starting with space are not saved
 
-
-
-# TODO: move aliases to their own file to source
-alias ls="ls -F"
-alias ll="ls -l"
-alias la="ll -a"
-alias beep="echo -e \"\a\""
-
-alias gfp="git fetch && git pull"
-
-if command -v nvim >/dev/null 2>&1; then
-    alias vim="nvim"
+if [ -f ~/dotfiles/config/shell-aliases ]; then
+    source ~/dotfiles/config/shell-aliases
 fi
+
+
 if command -v starship >/dev/null 2>&1; then
     eval "$(starship init zsh)"
 fi
