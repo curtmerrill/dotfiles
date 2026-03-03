@@ -1,23 +1,14 @@
--- auto install vim-plug and plugins, if not found
-local data_dir = vim.fn.stdpath('data')
-if vim.fn.empty(vim.fn.glob(data_dir .. '/site/autoload/plug.vim')) == 1 then
-    vim.cmd('silent !curl -fLo ' .. data_dir .. '/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim')
-	vim.o.runtimepath = vim.o.runtimepath
-	vim.cmd('autocmd VimEnter * PlugInstall --sync | source $MYVIMRC')
-
-end
-
 local vim = vim
 local Plug = vim.fn['plug#']
 
 vim.loader.enable()
 vim.call('plug#begin')
 
-Plug('nvim-lualine/lualine.nvim') -- statusline
+Plug('nvim-tree/nvim-tree.lua')
 
 vim.call('plug#end')
 
-require("plugins.lualine")
+require("plugins.nvim-tree")
 
 
 -- theme
@@ -140,7 +131,7 @@ vim.keymap.set("v", "<", "<gv", { desc = "Indent left and reselect" })
 vim.keymap.set("v", ">", ">gv", { desc = "Indent right and reselect" })
 
 -- Quick file navigation
-vim.keymap.set("n", "<leader>e", ":Explore<CR>", { desc = "Open file explorer" })
+vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle NvimTree" })
 vim.keymap.set("n", "<leader>ff", ":find ", { desc = "Find file" })
 
 -- Better J behavior
