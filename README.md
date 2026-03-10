@@ -7,9 +7,10 @@
 2. cd into `dotfiles` directory
 3. run `install.sh`
 
-**Prereqs**
+### Install helpers
   - [direnv](https://direnv.net/docs/installation.html)
   - [starship](https://starship.rs/guide/#🚀-installation)
+  - fzf: `brew install fzf` or `apt install fzf`
 
 ## Notes
 Shell `*profile` files run once per login; good for system-wide environment vars, init scripts.

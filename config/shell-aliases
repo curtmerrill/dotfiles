@@ -1,12 +1,18 @@
-alias ls="ls -F"
-alias ll="ls -l"
-alias la="ll -a"
+alias ls="ls --color=auto"
+alias ll="ls -lh"
+alias la="ls -lah"
 alias beep="echo -e \"\a\""
 
 alias gfp="git fetch && git pull"
 
 alias dotclean="find . -type f -name '._*' -print -delete"
 
+alias dot="cd ~/dotfiles"
+
 if command -v nvim >/dev/null 2>&1; then
-    alias vim="nvim"
+    alias v=nvim
+    alias vi=nvim
+    alias vim=nvim
 fi
+
+
