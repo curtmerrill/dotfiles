@@ -1,8 +1,12 @@
 # .zprofile
 # - for environment variables, configuration
 
+# use vim keybindings when navigating history
+set -o vi
+
 # default programs
-export EDITOR="nvim"
+export EDITOR=nvim
+export TERM="tmux-256color"
 
 # follow XDG base dir specs
 export XDG_CONFIG_HOME="$HOME/.config"
