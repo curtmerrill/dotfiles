@@ -13,11 +13,7 @@
   - [starship](https://starship.rs/guide/#🚀-installation)
   - fzf: `brew install fzf` or `apt install fzf`
 
-### Install vim-plug
-```
-curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
+### Install neovim 12+
 
 Then run `:PlugInstall` inside nvim
 
