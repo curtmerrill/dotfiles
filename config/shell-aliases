@@ -1,11 +1,11 @@
 alias ls="ls --color=auto"
 alias ll="ls -lh"
 alias la="ls -lah"
-alias beep="echo -e \"\a\""
 
 alias gfp="git fetch && git pull"
 
 alias dotclean="find . -type f -name '._*' -print -delete"
+alias rmempty="find . -maxdepth 1 -name '*.md' -empty -delete"
 
 alias dot="cd ~/dotfiles"
 
