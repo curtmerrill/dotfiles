@@ -5,7 +5,7 @@
 set -o vi
 
 # default programs
-export EDITOR=nvim
+export EDITOR=vim
 export TERM="tmux-256color"
 
 # follow XDG base dir specs

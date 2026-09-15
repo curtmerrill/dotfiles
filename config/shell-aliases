@@ -9,10 +9,9 @@ alias rmempty="find . -maxdepth 1 -name '*.md' -empty -delete"
 
 alias dot="cd ~/dotfiles"
 
-if command -v nvim >/dev/null 2>&1; then
-    alias v=nvim
-    alias vi=nvim
-    alias vim=nvim
+if command -v vim >/dev/null 2>&1; then
+    alias v=vim
+    alias vi=vim
 fi
 
 

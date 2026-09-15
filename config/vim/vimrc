@@ -1,0 +1,134 @@
+" theme
+" set background=dark
+colorscheme flexoki
+set termguicolors
+highlight Normal ctermbg=NONE guibg=NONE
+highlight EndOfBuffer ctermbg=NONE guibg=NONE
+
+" basic
+set number
+set relativenumber
+set cursorline
+set nowrap
+set scrolloff=10
+set sidescrolloff=8
+
+" indentation
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set smartindent
+set autoindent
+
+" search settings
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
+
+" visual settings
+syntax on
+set signcolumn=yes
+set colorcolumn=92
+set showmatch
+set matchtime=2
+set cmdheight=1
+set pumheight=10
+set conceallevel=0
+set concealcursor=
+set lazyredraw
+set synmaxcol=300
+
+" file handling
+set nobackup
+set nowritebackup
+set noswapfile
+set undofile
+set undodir=~/.vim/undodir
+set autoread
+set noautowrite
+
+" behavior
+set backspace=indent,eol,start
+set noautochdir
+set path+=**
+set mouse=a
+set modifiable
+set encoding=UTF-8
+
+" split behavior
+set splitbelow
+set splitright
+
+" key mapping
+let mapleader = " "
+let maplocalleader = " "
+
+" normal mode mapping
+nnoremap <leader>c :nohlsearch<CR>
+
+nnoremap Y y$
+
+" center screen when jumping
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
+" Buffer navigation
+nnoremap <leader>bn :bnext<CR>
+nnoremap <leader>bp :bprevious<CR>
+
+" Better window navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Splitting & Resizing
+nnoremap <leader>sv :vsplit<CR>
+nnoremap <leader>sh :split<CR>
+nnoremap <C-Up> :resize +2<CR>
+nnoremap <C-Down> :resize -2<CR>
+nnoremap <C-Left> :vertical resize -2<CR>
+nnoremap <C-Right> :vertical resize +2<CR>
+
+" Move lines up/down
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
+" Better indenting in visual mode
+vnoremap < <gv
+vnoremap > >gv
+
+" Quick file navigation
+" nnoremap <leader>e :NERDTreeToggle<CR>
+nnoremap <leader>ff :find<space>
+
+" Better J behavior
+nnoremap J mzJ`z
+
+" Quick config editing
+nnoremap <leader>rc :e $MYVIMRC<CR>
+nnoremap <leader>rl :source $MYVIMRC<CR>
+
+" ---------------------------------------------------------------------------
+" Notes on what changed vs. your Neovim config
+" ---------------------------------------------------------------------------
+" 1. nvim-tree -> NERDTree. NERDTree can't fully replicate nvim-tree's icon
+"    config (folder_arrow/git icons need the extra plugins vim-devicons and
+"    Xuyuanp/nerdtree-git-plugin — add them to the Plug block above if wanted).
+" 2. `vim.loader.enable()` has no plain-Vim equivalent (it's Neovim's Lua
+"    bytecode cache) — omitted, nothing to replace it with.
+" 3. `NormalNC` (unfocused-window highlight) doesn't exist in plain Vim, so
+"    the transparent-background trick only applies to `Normal`/`EndOfBuffer`.
+" 4. Alt-key mappings (<A-j>/<A-k>) depend on your terminal sending the right
+"    escape codes to Vim; if they don't fire, your terminal may need a config
+"    tweak (this was also somewhat terminal-dependent under Neovim).
+" 5. Make sure ~/.vim/undodir exists: mkdir -p ~/.vim/undodir
+" 6. Put this file at ~/.vimrc, and colors/flexoki.vim at ~/.vim/colors/flexoki.vim
+" 7. `pumblend`/`winblend` (popup-menu/float transparency) don't exist in
+"    plain Vim — dropped, no substitute available.
