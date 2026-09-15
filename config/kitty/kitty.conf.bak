@@ -3305,9 +3305,10 @@ include current-theme.conf
 # END_KITTY_THEME
 
 # BEGIN_KITTY_FONTS
-font_family      family="SF Mono"
-bold_font        family='SF Mono' style=Bold
+font_family      family='SF Mono' postscript_name=SFMono-Regular
+bold_font        family='SF Mono' postscript_name=SFMono-Bold
 italic_font      auto
-bold_italic_font family='SF Mono' style='Bold Italic'
-# END_KITTY_FONTS
+bold_italic_font family='SF Mono' postscript_name=SFMono-BoldItalic
 font_size 15.0
+modify_font cell_height 115%
+# END_KITTY_FONTS
