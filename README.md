@@ -13,10 +13,6 @@
   - [starship](https://starship.rs/guide/#🚀-installation)
   - fzf: `brew install fzf` or `apt install fzf`
 
-### Install neovim 12+
-
-Then run `:PlugInstall` inside nvim
-
 ## Notes
 Shell `*profile` files run once per login; good for system-wide environment vars, init scripts.
 
@@ -34,7 +30,6 @@ machine specific info:
 [Nicolay Christopher Gerold](https://www.nicolaygerold.com/til/how-to-set-up-your-dotfiles-for-sharing/)  
 
 Colorscheme: [Flexoki](https://github.com/kepano/flexoki),
-Neovim implementation by [cpplain](https://github.com/cpplain/dotfiles/blob/main/home/.config/nvim/init.lua)
 
 
 
