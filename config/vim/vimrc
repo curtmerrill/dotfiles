@@ -50,6 +50,7 @@ set autoread
 set noautowrite
 
 " behavior
+set showmode
 set backspace=indent,eol,start
 set noautochdir
 set path+=**
